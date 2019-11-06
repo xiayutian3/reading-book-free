@@ -19,6 +19,8 @@ $fontSize: 37.5;
 }
 
 .slow-down-enter-active, .slow-down-leave-active,
+.fade-enter-active, .fade-leave-active,
+.slow-right-enter-active, .slow-right-leave-active
 .slow-up-enter-active, .slow-up-leave-active{
   transition: all .3s linear;
 }
@@ -27,4 +29,13 @@ $fontSize: 37.5;
 }
 .slow-up-enter, .slow-up-leave-to{
   transform: translate3d(0,px2rem(108),0);
+}
+.fade-enter, .fade-leave-to{
+  opacity: 0;
+}
+.fade-enter-to, .fade-leave{
+  opacity: 1;
+}
+.slide-right-enter, .slide-right-leave-to{
+  transform: translate3d(-100%,0,0);
 }
